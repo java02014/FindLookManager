@@ -4,8 +4,8 @@ FindLookManager
 通过扫描商品条形码，从联图网查询到商品的信息，本地修改数据后，上传到Bmob服务器
 
 
-![github](https://github.com/Stonekity/Shop/blob/master/screen/Screenshot1.png)
-![github](https://github.com/Stonekity/Shop/blob/master/screen/Screenshot2.png)
+![github](https://github.com/Stonekity/FindLookManager/blob/master/screen/Screenshot1.png)
+![github](https://github.com/Stonekity/FindLookManager/blob/master/screen/Screenshot2.png)
 
 
 商品查询API调用
