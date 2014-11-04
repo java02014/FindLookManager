@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:overScrollMode="always" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!-- 商品条码 -->
+
+        <TextView
+            android:id="@+id/tv_good_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="6954674001235"
+            android:textColor="#20B2AA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivImageSelected"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#20000000"
+            android:contentDescription="商品展示图片"
+            android:src="@drawable/ic_app" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#20000000"
+            android:padding="3dp"
+            android:text="编辑图片"
+            android:textColor="#20B2AA"
+            android:textSize="14sp" />
+
+        <!-- 商品名称 -->
+
+        <EditText
+            android:id="@+id/tv_good_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="商品名称"
+            android:padding="10dp"
+            android:textColor="#20B2AA"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_good_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:contentDescription="商品名称"
+            android:padding="10dp" />
+
+        <!-- 参考价格 -->
+
+        <LinearLayout
+            android:id="@+id/ll_good_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="参考价格: "
+                android:textColor="#696969" />
+
+            <EditText
+                android:id="@+id/tv_good_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5dp"
+                android:textColor="#DC143C" />
+        </LinearLayout>
+
+        <!-- 商品产地 -->
+
+        <LinearLayout
+            android:id="@+id/ll_good_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="商品产地: "
+                android:textColor="#696969" />
+
+            <EditText
+                android:id="@+id/tv_good_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5dp"
+                android:textColor="#696969" />
+        </LinearLayout>
+
+        <!-- 商品国别 -->
+
+        <LinearLayout
+            android:id="@+id/ll_good_nation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="商品国别: "
+                android:textColor="#696969" />
+
+            <EditText
+                android:id="@+id/tv_good_nation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5dp"
+                android:textColor="#696969" />
+        </LinearLayout>
+
+        <!-- 厂商代码 -->
+
+        <LinearLayout
+            android:id="@+id/ll_com_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="厂商代码: "
+                android:textColor="#696969" />
+
+            <EditText
+                android:id="@+id/tv_com_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5dp"
+                android:textColor="#696969" />
+        </LinearLayout>
+
+        <!-- 厂商名称 -->
+
+        <LinearLayout
+            android:id="@+id/ll_com_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="厂商名称: "
+                android:textColor="#696969" />
+
+            <EditText
+                android:id="@+id/tv_com_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5dp"
+                android:textColor="#696969" />
+        </LinearLayout>
+
+        <!-- 注册状态 -->
+
+        <LinearLayout
+            android:id="@+id/ll_reg_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="注册状态: "
+                android:textColor="#696969" />
+
+            <EditText
+                android:id="@+id/tv_reg_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5dp"
+                android:textColor="#696969" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="#20B2AA" />
+
+        <!-- 适配上版本数据 -->
+
+		<!-- 商品名称 -->
+        <LinearLayout
+            android:id="@+id/ll_good_name_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="商品名称："
+                android:textColor="#696969" />
+
+            <EditText
+                android:id="@+id/tv_good_name_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5dp"
+                android:textColor="#696969" />
+        </LinearLayout>
+        
+        <!-- 商品信息 -->
+        <LinearLayout
+            android:id="@+id/ll_good_info_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="商品描述："
+                android:textColor="#696969" />
+
+            <EditText
+                android:id="@+id/tv_good_info_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5dp"
+                android:textColor="#696969" />
+        </LinearLayout>
+        
+        <!-- 性价比 -->
+        <LinearLayout
+            android:id="@+id/ll_good_value_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="性  价  比 : "
+                android:textColor="#696969" />
+
+            <EditText
+                android:id="@+id/tv_good_value_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:padding="5dp"
+                android:textColor="#696969" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_good_add"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#20000000"
+            android:text="添加商品"
+            android:textColor="#20B2AA"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</ScrollView>
